@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InternMe</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+   <%= link_to "Inicio", root_path %>
+    <%= link_to "Nosotros", about_path %>
+    <%= link_to "Contacto", contact_path %>
+    <%= yield %>
+</html>
